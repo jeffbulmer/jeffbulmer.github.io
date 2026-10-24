@@ -15,7 +15,7 @@ import { LoadingService } from './services/loading/loading.service';
     standalone: false
 })
 export class AppComponent implements OnInit, OnDestroy{
-  title = 'andresjosehr-portfolio';
+  title = 'andresjosehr-portfolio'; //TODO: update
   appContentVisible = false;
   private lenis: Lenis;
 
@@ -33,9 +33,9 @@ export class AppComponent implements OnInit, OnDestroy{
 
     this.languageService.initLanguage()
 
-    this.titleService.setTitle( "José Andrés | Frontend Developer" );
+    this.titleService.setTitle( "Jeff Bulmer | Software Developer" ); 
 
-    this.metaService.addTags([
+    this.metaService.addTags([ //TODO: Update
       {name: 'keywords', content: 'Frontend, software, developer'},
       {name: 'description', content: 'Con 4 años de experiencia desarrollando sistemas, interfaces, bots y soluciones tecnológicas  para hacer de la web un lugar mejor. En mi trabajo me gusta liderar, proponer y ejecutar ideas, escribir y refactorizar código limpio, reutilizable y escalable.'},
     ]);
