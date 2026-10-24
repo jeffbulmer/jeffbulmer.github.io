@@ -131,12 +131,6 @@ a {
   left: 0;
 }
 
-@media (min-width: 768px) and (max-width: 1100px) {
-  .proyect-container {
-    margin: 30px 0 !important;
-    height: 385px !important;
-  }
-}
 .container {
   position: relative;
   z-index: 2;
@@ -214,4 +208,3 @@ a {
   }
 }
 
-/* Bootstrap imports moved to top of file */

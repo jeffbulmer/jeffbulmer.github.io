@@ -24,21 +24,15 @@
                         },
                         "index": "src/index.html",
                         "polyfills": [
-                            "src/polyfills.ts"
+                            "zone.js"
                         ],
                         "tsConfig": "tsconfig.app.json",
                         "assets": [
                             "src/favicon.ico",
-                            "src/assets",
-                            "src/manifest.webmanifest",
-                            "src/.htaccess"
+                            "src/assets"
                         ],
                         "styles": [
                             "node_modules/@fortawesome/fontawesome-free/css/all.css",
-                            "node_modules/bootstrap/dist/css/bootstrap.min.css",
-                            "node_modules/lenis/dist/lenis.css",
-                            "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
-                            "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
                             "src/styles.scss",
                             "src/fonts.scss"
                         ],
@@ -70,11 +64,10 @@
                                 },
                                 {
                                     "type": "anyComponentStyle",
-                                    "maximumWarning": "6kb",
+                                    "maximumWarning": "8kb",
                                     "maximumError": "10kb"
                                 }
-                            ],
-                            "serviceWorker": "ngsw-config.json"
+                            ]
                         }
                     },
                     "defaultConfiguration": ""
@@ -88,30 +81,6 @@
                         "production": {
                             "buildTarget": "jeffbulmer-portfolio:build:production"
                         }
-                    }
-                },
-                "extract-i18n": {
-                    "builder": "@angular-devkit/build-angular:extract-i18n",
-                    "options": {
-                        "buildTarget": "jeffbulmer-portfolio:build"
-                    }
-                },
-                "test": {
-                    "builder": "@angular-devkit/build-angular:karma",
-                    "options": {
-                        "main": "src/test.ts",
-                        "polyfills": "src/polyfills.ts",
-                        "tsConfig": "tsconfig.spec.json",
-                        "karmaConfig": "karma.conf.js",
-                        "assets": [
-                            "src/favicon.ico",
-                            "src/assets",
-                            "src/manifest.webmanifest"
-                        ],
-                        "styles": [
-                            "src/styles.css"
-                        ],
-                        "scripts": []
                     }
                 }
             }

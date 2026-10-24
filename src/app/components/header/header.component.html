@@ -1,0 +1,18 @@
+<nav [@animateMenu] class="navbar main-navbar on-top" [class.nav-shadow]="pageYPosition > 0">
+    <div class="container">
+        <a class="navbar-brand text-light" href="/">
+            <img src="assets/images/logo.png" width="25" alt="Jeff Bulmer" />
+        </a>
+        <ul class="menu-ul">
+            <li>
+                <app-dynamic-button
+                    text="Resume"
+                    href="assets/cv/resume.pdf"
+                    target="_blank"
+                    variant="primary"
+                    size="small">
+                </app-dynamic-button>
+            </li>
+        </ul>
+    </div>
+</nav>
