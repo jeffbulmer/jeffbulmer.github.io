@@ -20,11 +20,11 @@
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
                         "outputPath": {
-                          "base": "dist/andresjosehr-portfolio"
+                            "base": "dist/andresjosehr-portfolio"
                         },
                         "index": "src/index.html",
                         "polyfills": [
-                          "src/polyfills.ts"
+                            "src/polyfills.ts"
                         ],
                         "tsConfig": "tsconfig.app.json",
                         "assets": [
@@ -82,18 +82,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                      "buildTarget": "andresjosehr-portfolio:build"
+                        "buildTarget": "andresjosehr-portfolio:build"
                     },
                     "configurations": {
                         "production": {
-                          "buildTarget": "andresjosehr-portfolio:build:production"
+                            "buildTarget": "andresjosehr-portfolio:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                      "buildTarget": "andresjosehr-portfolio:build"
+                        "buildTarget": "andresjosehr-portfolio:build"
                     }
                 },
                 "test": {
@@ -113,31 +113,6 @@
                         ],
                         "scripts": []
                     }
-                },
-                "lint": {
-                    "builder": "@angular-devkit/build-angular:tslint",
-                    "options": {
-                        "tsConfig": [
-                            "tsconfig.app.json",
-                            "tsconfig.spec.json",
-                            "e2e/tsconfig.json"
-                        ],
-                        "exclude": [
-                            "**/node_modules/**"
-                        ]
-                    }
-                },
-                "e2e": {
-                    "builder": "@angular-devkit/build-angular:protractor",
-                    "options": {
-                        "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "andresjosehr-portfolio:serve"
-                    },
-                    "configurations": {
-                        "production": {
-                            "devServerTarget": "andresjosehr-portfolio:serve:production"
-                        }
-                    }
                 }
             }
         }
@@ -148,25 +123,25 @@
             "type": "component"
         },
         "@schematics/angular:directive": {
-          "type": "directive"
+            "type": "directive"
         },
         "@schematics/angular:service": {
-          "type": "service"
+            "type": "service"
         },
         "@schematics/angular:guard": {
-          "typeSeparator": "."
+            "typeSeparator": "."
         },
         "@schematics/angular:interceptor": {
-          "typeSeparator": "."
+            "typeSeparator": "."
         },
         "@schematics/angular:module": {
-          "typeSeparator": "."
+            "typeSeparator": "."
         },
         "@schematics/angular:pipe": {
-          "typeSeparator": "."
+            "typeSeparator": "."
         },
         "@schematics/angular:resolver": {
-          "typeSeparator": "."
+            "typeSeparator": "."
         }
     },
     "cli": {
