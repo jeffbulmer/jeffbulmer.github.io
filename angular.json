@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "andresjosehr-portfolio": {
+        "jeffbulmer-portfolio": {
             "projectType": "application",
             "schematics": {},
             "root": "",
@@ -20,7 +20,7 @@
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
                         "outputPath": {
-                            "base": "dist/andresjosehr-portfolio"
+                            "base": "dist/jeffbulmer-portfolio"
                         },
                         "index": "src/index.html",
                         "polyfills": [
@@ -82,18 +82,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "buildTarget": "andresjosehr-portfolio:build"
+                        "buildTarget": "jeffbulmer-portfolio:build"
                     },
                     "configurations": {
                         "production": {
-                            "buildTarget": "andresjosehr-portfolio:build:production"
+                            "buildTarget": "jeffbulmer-portfolio:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "buildTarget": "andresjosehr-portfolio:build"
+                        "buildTarget": "jeffbulmer-portfolio:build"
                     }
                 },
                 "test": {

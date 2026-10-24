@@ -1,5 +1,5 @@
 {
-  "name": "andresjosehr-portfolio",
+  "name": "jeffbulmer-portfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,9 +7,9 @@
     "build": "ng build",
     "build-portfolio": "ng build --configuration production",
     "build:prod": "ng build --configuration production --base-href https://jkbulmer.me/",
-    "postbuild:prod": "cp .nojekyll dist/andresjosehr-portfolio/browser/ && cp CNAME dist/andresjosehr-portfolio/browser/",
-    "deploy": "npm run build:prod && npm run postbuild:prod && ngh --dir=dist/andresjosehr-portfolio/browser --cname=jkbulmer.me",
-    "deploy:ci": "npm run postbuild:prod && ngh --dir=dist/andresjosehr-portfolio/browser --cname=jkbulmer.me --no-silent",
+    "postbuild:prod": "cp .nojekyll dist/jeffbulmer-portfolio/browser/ && cp CNAME dist/jeffbulmer-portfolio/browser/",
+    "deploy": "npm run build:prod && npm run postbuild:prod && ngh --dir=dist/jeffbulmer-portfolio/browser --cname=jkbulmer.me",
+    "deploy:ci": "npm run postbuild:prod && ngh --dir=dist/jeffbulmer-portfolio/browser --cname=jkbulmer.me --no-silent",
     "predeploy": "npm run build:prod",
     "test": "ng test"
   },
